@@ -5,6 +5,10 @@ hight=int(input ("Enter your hight"))
 if hight >= 120:
     print ("you can ride")
     ege = int(input ("Please enter your ege : "))
+    if ege >= 40 and ege <= 45:
+        print ("ticket is free for you")
+        exit ()
+
     if ege < 12:
         bill=5
         print ("child tickets are $5")
@@ -18,7 +22,6 @@ if hight >= 120:
     if photo == "Y":
         bill = bill + 5
         print(f"you need give {bill}")
-    else:
-        print(f"you need give {bill}")
+    
 else:
     print ("you cannot ride")
